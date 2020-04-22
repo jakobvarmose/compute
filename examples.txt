@@ -1,0 +1,26 @@
+range(100000)%((5-len(toString(isPrime(!@))))*!@)/(!@!=0)
+
+
+a=x=>(range(x+1)%(y=>x+1+y)/isPrime)#0
+
+## n'th prime
+np=n=>(range(1000)/isPrime)#n
+
+
+## is prime
+p=(i=>i>=2 and all(range(i-3)%(j=>i%(j+2)!=0)))
+
+## next prime
+a=x=>(range(x+1)%(y=>x+1+y)/(y=>isPrime(y)))#0
+a=x=>(range(x+1)%(y=>x+1+y)/(y=>p(y)))#0
+
+
+a=x=>(range(x)/(y=>y+1)/(y=>isPrime(y)))
+
+a=x=>(range(x)%(y=>y+1)%(y=>isPrime(y)))
+
+
+
+a=(i=>range(i-1)%(j=>i))
+
+range(len(a))%(i=>a#i+b#i)
